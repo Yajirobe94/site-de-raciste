@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+*{
+	margin  : 0;
+	padding : 0;
+}
+
+@font-face {
+    font-family: "Test";
+    src: url("Univers LT Std 67 Bold Condensed.otf");
+}
+
+body {
+  margin: 0;
+  background-color: #e2e2dc;
+  font-family: 'Test', sans-serif;
+}
+
+header{
+	background-color : white;		
+	text-align : left;	
+}
+
+/* ////// MENU NAVIGATION \\\\\\\ */
+
+.MenuNavigation{
+	color: black;
+	display:flex;
+	position: relative;
+	height: 100px;
+    font-size: 100%;
+}
+
+.NavFirstChild{
+	border-left: 1px solid grey;
+}
+
+.MenuNavigation a{
+	border-right: 1px solid grey;
+	display: flex;
+	align-items: center;
+	padding: 0% 9.37% 0% 9.37%;
+	transition: background-color .2s ease-in-out;
+	color: black;
+	text-decoration: none;
+}
+
+.MenuNavigation a:hover{
+	box-shadow: 2px 2px 10px black;
+	background-color: #ECECEC;
+}
+
+/* ////// IMAGE AVEC TITRE \\\\\\\ */
+
+.ImageMenu {
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../Images/Menu.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 50%;
+	padding: 11%;
+}
+
+.TextBlock1 {
+  position: absolute;
+  font-size: 300%;
+  bottom: 50%;
+  right: 57%;
+  background-color: black;
+  color: white;
+  padding: 0.25% 0.5% 0.25% 0.5%;
+}
+
+.TextBlock2 {
+  position: absolute;
+  font-size: 175%;
+  bottom: 35%;
+  right: 82.5%;
+  background-color: white;
+  color: black;
+  padding: 0.25% 0.5% 0.25% 0.5%;
+  border-radius : 1rem;
+}
+
+/* ////// CONTENU CENTRALE \\\\\\\ */
+
+main {
+	text-align : center;
+}
+
+/* ////// DESCRIPTION CENTRALE + SOUS TITRE \\\\\\\ */
+
+.Description {
+
+	margin: 5% 29% 5% 29%;
+	font-size: 150%;
+	text-indent: 0rem;
+	line-height: 250%;
+}
+
+.Description article {
+
+	font-size: 75%;
+	margin: 7% 0% 0% 0%;
+	line-height: 150%;
+}
+
+.ReadMore{
+	margin: 2% 0% 0% 0%;
+}
+
+.ReadMore a{
+	text-align : center;
+	color: green;
+	text-decoration: none;
+}
+
+/* ////// BLOCS DES COURS \\\\\\\ */
+
+.Collection{
+	padding: 7% 0% 5% 0%;
+	color: black;
+	display: flex;
+	position: relative;
+    font-size: 100%;
+	justify-content: space-around;
+}
+
+.Terre{
+	background-image: linear-gradient(rgba(72, 60, 50, 0.35), rgba(72, 60, 50, 0.35)), url("../Images/Terrestre.jpg");
+}
+
+.Air{
+	background-image: linear-gradient(rgba(72, 60, 50, 0.35), rgba(72, 60, 50, 0.35)), url("../Images/Aeerean.jpeg");
+}
+
+.Eau{
+	background-image: linear-gradient(rgba(72, 60, 50, 0.35), rgba(72, 60, 50, 0.35)), url("../Images/Ship.jpg");
+}
+
+.Collection a{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	padding: 11% 7% 11% 7%;
+	transition: background-color .2s ease-in-out;
+	text-decoration: none;
+	color: white;
+	transition: transform 1.1s;
+}
+
+.Collection a h4{
+	font-size: 350%;
+}
+
+.Collection a:hover{
+	box-shadow: 2px 2px 10px black;
+	transform: scale(1.025);
+}
+
+/* ////// BAS DE PAGE \\\\\\\ */
+
+footer {
+	background-color : black;
+	color: white;
+	padding: 2%;
+}
+
+.infos{
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+.infos div{
+	
+	padding: 0% 10% 0% 10%;
+}
+
+.infos h4{
+	
+	font-size: 125%;
+}
