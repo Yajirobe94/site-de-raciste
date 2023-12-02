@@ -35,14 +35,18 @@ header{
 	border-left: 1px solid grey;
 }
 
-.MenuNavigation a{
+.MenuNavigation a:not(.logoHref) {
 	border-right: 1px solid grey;
 	display: flex;
 	align-items: center;
 	padding: 0% 9.37% 0% 9.37%;
-	transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out,box-shadow 0.5s;
 	color: black;
 	text-decoration: none;
+}
+
+.logoImg {
+	height: 100%;
 }
 
 .MenuNavigation a:hover{
@@ -53,7 +57,7 @@ header{
 /* ////// IMAGE AVEC TITRE \\\\\\\ */
 
 .ImageMenu {
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../Images/Menu.jpg");
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../Images/menu.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,61 +93,96 @@ main {
 	text-align : center;
 }
 
-/* ////// DESCRIPTION CENTRALE + SOUS TITRE \\\\\\\ */
-
-
 
 /* ////// BLOCS DES COURS \\\\\\\ */
 
-.TextFormation p {
-	color:black;
-	font-size: 100%;
-	padding: 4.5% 4.125%;
-
+.grandTitre {
+	font-size: 350%;
+	padding-top: 6%;
+	padding-bottom: 1%;
 }
-.TextFormation {
-	width :50%;
-	background-color: white;
-
+.credit {
+	font-size: 150%;
 }
-.Formation {
-	 display: flex;
+
+.allSpe {
+	display:block;
+}
+
+.specialites{
+	padding-top: 5%;
+	padding-left: 12%;
+	font-size: 275%;
+	text-align: left;
+}
+
+.descSpecialites {
+	display: flex;
 	position: relative;
-	padding: 12.5%;
+	padding: 0% 12% 5% 12%;
+	justify-content: space-around;
 }
 
-.imgfonda {
-    width: 50%;
-    background-image: url(../Images/fondamentaux.jpg);
-    background-position-x: center;
+/* ////// BLOCS DE GAUCHE \\\\\\\ */
+
+.leftBloc {
+	padding: 5% 7% 5% 7%;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	color: white;
+	font-size: 125%;
+	flex: 50%;
 }
 
-
-.imgterre {
-	 width: 50%;
-    background-image: url(../Images/terre.jpg);
-    background-position-x: center;
-	background-repeat: no-repeat;
-		background-size: cover;
-}
-.imgair {
-	width: 50%;
-    background-image: url(../Images/air.jpg);
-    background-position-x: center;
-	background-repeat: no-repeat;
-		background-size: cover;
+.specialites:nth-of-type(1) + .descSpecialites .leftBloc {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/soldats2.jpeg");
 }
 
-.imgmaritime {
-	width: 50%;
-    background-image: url(../Images/maritime.jpg);
-    background-position-x: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.specialites:nth-of-type(2) + .descSpecialites .leftBloc {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/terre.jpg");
 }
 
+.specialites:nth-of-type(3) + .descSpecialites .leftBloc {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/air1.jpg");
+}
+
+.specialites:nth-of-type(4) + .descSpecialites .leftBloc {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/ship.jpg");
+}
+
+.typeSpe {
+	padding: 0% 0% 20% 0%;
+	font-size: 220%;
+	color: orange;
+}
+
+.descSpe {
+	font-size: 120%
+}
+
+.matieresSpe {
+	padding-top: 15%;
+	font-size: 200%;
+}
+
+/* ////// BLOCS DE DROITE \\\\\\\ */
+
+.rightBloc {
+	font-size: 150%;
+	background-color: white;
+	padding: 3.5% 5% 2% 5%;
+	flex: 50%;
+}
+
+.rightBloc div {
+	display:block;
+	padding: 5% 0% 5% 5%;
+}
+
+.rightBloc div h2{
+	color: rgb(204, 133, 0);
+}
 
 /* ////// BAS DE PAGE \\\\\\\ */
 
